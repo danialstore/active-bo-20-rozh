@@ -65,7 +65,7 @@ function proxy(){
 }
 $proxy = proxy();
 $keys = array(
-    1 => 'pk_live_SMtnnvlq4TpJelMdklNha8iD'
+    1 => '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'
 );
 $key = array_rand($keys);
 $keyStripe = $keys[$key];
@@ -87,7 +87,7 @@ function mod($dividendo, $divisor)
 }
 
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, 'https://randomuser.me/api/?nat=us');
+curl_setopt($ch, CURLOPT_URL, 'https://randomuser.me/api/');
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
 curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
 curl_setopt($ch, CURLOPT_COOKIE, 1);
